@@ -257,6 +257,89 @@ body{
     width: 100%;
     border-radius: 18px;
 }
+/* calculate section start here */
+#calculator{
+    margin-top: 100px;
+    background-color: var(--primary-bg-color);
+    padding-top: 52px;
+}
+.calculate h1{
+    font-size: 48px;
+    color: var(--color);
+    font-weight: 900;
+    margin-bottom: 14px;
+    margin-left: 326px;
+}
+.calculate p{
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    margin-bottom: 50px;
+}
+.para{
+    margin-left: 326px;
+}
+.calculate-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 200px;
+}
+.calculate-container h2{
+    color: var(--color);
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 52px;
+}
+table{
+    border-collapse: collapse;
+}
+table,tr,th,td{
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 15px;
+}
+th{
+    color: var(--color);
+    text-align: left;
+}
+td{
+    color: var(--text-color);
+}
+.your-calculator h2{
+    color: var(--color);
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.your-calculator p{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.input input{
+    width: 282px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.1);
+    outline: 0;
+    border: none;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.input input:last-child{
+    width: 577px;
+    margin-bottom: 4                                              0px;
+}
+.input input::placeholder{
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgba(255,255,255,0.6);
+}
 
 /* Responsive start */
 @media screen and (max-width:576px) {
@@ -367,7 +450,81 @@ body{
     border-radius: 18px;
     margin-top: -100px;
 }
-    
+   /* calculate section start here */
+#calculator{
+    margin-top: 50px;
+    padding-top: 40px;
+}
+.calculate h1{
+    font-size: 32px;
+    margin-bottom: 14px;
+    margin-left: 16px;
+}
+.calculate p{
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    margin-bottom: 50px;
+}
+.para{
+    margin-left: 16px;
+}
+.calculate-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.calculate-container h2{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+table{
+    border-collapse: collapse;
+}
+table,tr,th,td{
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 15px;
+}
+th{
+    color: var(--color);
+    text-align: left;
+}
+td{
+    color: var(--text-color);
+}
+.your-calculator h2{
+    margin-top: -130px;
+    color: var(--color);
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.your-calculator p{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.input input{
+    width: 190px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.1);
+    outline: 0;
+    border: none;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.input input:last-child{
+    width: px;
+    margin-bottom:30px;
+    width: 390px;
+}
+.cal-btn{
+    width: 40%;
+}
 
    
    
