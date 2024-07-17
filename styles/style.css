@@ -83,6 +83,7 @@ body{
     justify-content: space-between;
     gap: 25px;
     margin: 0;
+    overflow: hidden;
 }
 .banner-title{
     color: var(--color);
@@ -176,8 +177,92 @@ body{
     letter-spacing: 0.5px;
 }
 
+/* Habit section start here */
+#change-habit{
+    margin-top: 100px;
+    text-align: center;
+}
+.change h2{
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--color);
+    margin-bottom: 14px;
+}
+.change p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: var(--text-color);
+    margin-bottom: 58px;
+}
+.habit-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.habit-1{
+    width: 272px;
+    height: 180px;
+}
+.habit-1 img{
+    border-radius: 50%;
+    width: 100%;
+}
+.habit-container h4{
+    color: var(--color);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+.habit-container p{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+}
+
+/* extra run section start here */
+#run-extra{
+    margin-top: 267px;
+}
+.run{
+    background: rgb(34,34,34);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 165px;
+    justify-content: space-between;
+    padding-top: 41px;
+    padding-right: 32px;
+    padding-left: 54px;
+    padding-bottom: 29px;
+    border-radius: 18px;
+}
+.extra-content h2{
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--color);
+    margin-bottom: 14px;
+}
+.extra-content p{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+   line-height: 24px;
+   margin-bottom: 34px;
+}
+.extra-image img{
+    width: 100%;
+    border-radius: 18px;
+}
+
 /* Responsive start */
 @media screen and (max-width:576px) {
+
+    /* navbar and banner start here */
+
     .navlink{
         display: none;
     }
@@ -246,6 +331,45 @@ body{
         font-size: 12px;
         letter-spacing: 0.38px;
     }
+
+    /* Habit section start here */
+    #change-habit{
+        margin-top: 0px;
+    }
+    .change h2{
+        font-size: 32px;
+    }
+    .habit-container{
+        grid-template-columns: 1fr;
+    }
+    .habit-1{
+        margin-bottom: 200px;
+        transform: translateX(25%);
+    }
+
+    /* extra run section start here */
+#run-extra{
+    margin-top: 20px;
+}
+.run{
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+.extra-content h2{
+    font-size: 32px;
+}
+.extra-btn{
+    width: 100%;
+}
+.extra-image img{
+    width: 100%;
+    border-radius: 18px;
+    margin-top: -100px;
+}
+    
+
+   
    
     
 }
