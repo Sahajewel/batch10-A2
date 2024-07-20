@@ -83,7 +83,7 @@ body{
     justify-content: space-between;
     gap: 25px;
     margin: 0;
-    overflow: hidden;
+
 }
 .banner-title{
     color: var(--color);
@@ -262,6 +262,7 @@ body{
     margin-top: 100px;
     background-color: var(--primary-bg-color);
     padding-top: 52px;
+    padding-bottom: 50px;
 }
 .calculate h1{
     font-size: 48px;
@@ -319,7 +320,7 @@ td{
     text-align: left;
     margin-bottom: 25px;
 }
-.input input{
+.input input {
     width: 282px;
     height: 48px;
     border-radius: 8px;
@@ -329,16 +330,134 @@ td{
     margin-bottom: 5px;
     margin-right: 5px;
 }
-.input input:last-child{
-    width: 577px;
-    margin-bottom: 4                                              0px;
+.input select{
+    width: 282px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.1);
+    outline: 0;
+    border: none;
+    margin-bottom: 5px;
+    padding-right: 15px;
 }
-.input input::placeholder{
+
+.input .select-activity{
+    width: 577px;
+    margin-bottom: 40px;
+}
+.input select,input::placeholder{
     padding-left: 15px;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
     color: rgba(255,255,255,0.6);
+    
+}
+/*meet section starts here */
+#meet-team{
+    margin-top: 88px;
+    margin-bottom: 88px;
+}
+.meet-container h1{
+    color: var(--color);
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.meet-container p{
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.meet-image{
+    border-radius: 18px;
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.meet-image-1{
+    position: relative;
+}
+.meet-image-single img{
+    width: 100%;
+    border-radius: 18px;
+}
+.meet-image-content{
+    position: absolute;
+    top: 80%;
+    left: 6%;
+}
+.meet-image-content h4{
+    color: var(--color);
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+.meet-image-content h6{
+    color: var(--text-color);
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+/* footer section starts here  */
+#footer{
+    background-color: rgba(255,255,255,0.1);
+    padding-top: 66px;
+}
+.footer-container{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    align-items: center;
+}
+.foot h3{
+    color: var(--fitness);
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.foot p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.3;
+    line-height: 24px;
+}
+.foot2 h4{
+    color: var(--color);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.foot2 ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.foot2 ul li a{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 23px;
+    font-weight: 400;
+    text-decoration: none;
+}
+hr{
+    border: 2px solid rgba(255,255,255,0.1);
+    margin-bottom: 20px;
+}
+.footer-pera{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    text-align: center;
 }
 
 /* Responsive start */
@@ -384,12 +503,13 @@ td{
         padding: 12px 16px 12px 18px;
         width: 150px;
         position: absolute;
-        top: -2%;
-        right: 20%;
+        top: -3%;
+        right: 18%;
     }
     .banner-content-right h2{
         font-size: 30px;
         letter-spacing: 0.76px;
+        
     }
     .banner-content-right p{
         font-size: 10px;
@@ -509,13 +629,15 @@ td{
 }
 .input input{
     width: 190px;
-    height: 48px;
-    border-radius: 8px;
-    background-color: rgba(255,255,255,0.1);
-    outline: 0;
-    border: none;
-    margin-bottom: 5px;
-    margin-right: 5px;
+}
+.input select{
+    width: 190px;
+}
+.input select option{
+    padding-right: 15px;
+}
+.input .select-activity{
+    width: 395px;
 }
 .input input:last-child{
     width: px;
@@ -523,9 +645,104 @@ td{
     width: 390px;
 }
 .cal-btn{
-    width: 40%;
+    width: 50%;
+}
+/*meet section starts here */
+#meet-team{
+    margin-top: 66px;
+    margin-bottom: 66px;
+}
+.meet-container h1{
+    font-size: 32px;
+}
+.meet-container p{
+    letter-spacing: 0.5px;
+}
+.meet-image{
+    border-radius: 18px;
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.meet-image-1{
+    position: relative;
+}
+.meet-image-single img{
+    width: 100%;
+    border-radius: 18px;
+}
+.meet-image-content{
+    position: absolute;
+    top: 80%;
+    left: 6%;
+}
+.meet-image-content h4{
+    color: var(--color);
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+.meet-image-content h6{
+    color: var(--text-color);
+    font-size: 14px;
+    letter-spacing: 0.3px;
 }
 
+/* footer section starts here  */
+#footer{
+    background-color: rgba(255,255,255,0.1);
+    padding-top: 66px;
+}
+.footer-container{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 50px;
+    align-items: center;
+}
+.foot h3{
+    color: var(--fitness);
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.foot p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.3;
+    line-height: 24px;
+}
+.foot2 h4{
+    color: var(--color);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.foot2 ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.foot2 ul li a{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 23px;
+    font-weight: 400;
+    text-decoration: none;
+}
+hr{
+    border: 2px solid rgba(255,255,255,0.1);
+    margin-bottom: 20px;
+}
+.footer-pera{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    padding-bottom: 30px;
+    text-align: center;
+}
    
    
     
