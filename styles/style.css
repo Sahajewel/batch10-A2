@@ -158,7 +158,7 @@ body{
     border-radius: 12px;
     position: absolute;
    left: -41%;
-   top: 70%;
+   top: 62%;
    transform: translate(3%, 50%);
 }
 .div-left{
@@ -205,7 +205,7 @@ body{
     grid-template-columns: repeat(4, 1fr);
 }
 .habit-1{
-    width: 272px;
+    width: 242px;
     height: 180px;
 }
 .habit-1 img{
@@ -357,6 +357,107 @@ td{
     color: rgba(255,255,255,0.6);
     
 }
+/* package section starts here */
+#package{
+    background: rgb(99, 88, 88);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    color: var(--color);
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.content p{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-image: url(../images/gym.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+.single-card{
+    text-align: center;
+    height: 600px;
+    padding-top: 97px;
+    padding-bottom: 70px;
+    background-color: rgba(15, 21, 22,0.9);
+    
+}
+.single-card .package-btn{
+    background-color: rgba(163, 181, 13,0.9); 
+    outline: 0;
+    border: none;
+    font-size: 18px;
+    margin-top: 25px;
+    color: #fff;
+    transition: 0.5s;
+}
+.single-card .package-btn:hover{
+    background-color: rgba(27, 32, 32, 0.9);
+}
+
+
+.single-card-2{
+    background-color: rgba(163, 181, 13,0.9); 
+    outline: 0;
+    border: none;
+    
+}
+.single-card-2 .package-btn{
+    background-color: rgba(15, 21, 22,0.9);
+    color: #fff;
+}
+.single-card-2 .package-btn:hover{
+    background-color: rgba(224, 240, 87, 0.9); 
+}
+.single-card h3{
+    color: var(--color);
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.single-card h2{
+    color: var(--color);
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.single-card h6{
+    color: var(--color);
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.single-card ul li{
+    list-style-type: none;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 16px;
+}
+.single-card ul li:first-child{
+    text-decoration: line-through;
+}
+.single-card ul li:last-child{
+    text-decoration: line-through;
+}
+.package-btn{
+    padding: 15px 45px;
+}
+
 /*meet section starts here */
 #meet-team{
     margin-top: 88px;
@@ -655,6 +756,14 @@ td{
 }
 .cal-btn{
     width: 50%;
+}
+
+/* package section starts here */
+.cards{
+    grid-template-columns:1fr;
+}
+.content h1{
+    font-size: 30px;
 }
 /*meet section starts here */
 #meet-team{
