@@ -357,7 +357,7 @@ td{
     color: rgba(255,255,255,0.6);
     
 }
-/* package section starts here */
+/* package section(Unique) starts here */
 #package{
     background: rgb(99, 88, 88);
     padding-top: 50px;
@@ -523,9 +523,12 @@ td{
 .footer-container{
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    align-items: center;
+}
+.foot-div{
+    display: flex;
+    justify-content: space-around;
 }
 .foot h3{
     color: var(--fitness);
@@ -571,6 +574,317 @@ hr{
 }
 
 /* Responsive start */
+@media screen and (max-width:992px) {
+
+    /* navbar and banner start here */
+   .navlinks{
+    margin-left: 30px;
+   }
+   
+    .navlink{
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 39px; 
+        margin-right: 10px;
+    }
+    .navlink ul li{
+        list-style-type: none;
+        margin-right: 17px;
+        padding: 15px;
+    }
+    .navlink ul li:first-child{
+        background-color: var(--fitness);
+        border-radius: 47px;
+        padding: 15px 20px;
+    }
+
+    .navlink{
+        display: block;
+    }
+    .bars{
+        display: none;
+    }
+    .banner-title{
+        font-size: 36px;
+    }
+    .banner-desc{
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .button{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .btn{
+        padding: 16px 20px ;
+        flex-basis: 50%;
+        font-size: 13px;
+    }
+    .banner-btn{
+        padding: 16px 20px ;
+        flex-basis: 50%;
+        font-size: 13px;
+    }
+    .banner-content-right{
+        border: 0.76px solid rgba(255,255,255,0.1);
+        border-radius: 9px;
+        backdrop-filter:  blur(15px);
+        background: rgba(255,255,255,0.1);
+        padding: 12px 16px 12px 18px;
+        width: 150px;
+        position: absolute;
+        top: 4%;
+        right: 33%;
+    }
+    .banner-content-right h2{
+        font-size: 30px;
+        letter-spacing: 0.76px;
+        
+    }
+    .banner-content-right p{
+        font-size: 10px;
+        letter-spacing: 0.76px;
+    }
+    .banner-content-left{
+        padding: 12px 17px 15px 17px;
+        border: 1px solid rgba(255,255,255,0.1);
+        backdrop-filter: blur(15px);
+        background: rgba(48,48,48,0.5);
+        width: 170px;
+        border-radius: 12px;
+        position: absolute;
+       left: -1%;
+       top: 59%;
+    }
+    .banner-content-left h2{
+        font-size: 18px;
+        letter-spacing: 0.23px;
+    }
+    .banner-content-left p{
+        font-size: 12px;
+        letter-spacing: 0.38px;
+    }
+
+    /* Habit section start here */
+    #change-habit{
+        margin-top: 80px;
+    }
+    .change h2{
+        font-size: 32px;
+    }
+    .habit-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .habit-1{
+        margin-bottom: 250px;
+        transform: translateX(25%);
+    }
+
+    /* extra run section start here */
+#run-extra{
+    margin-top: 20px;
+}
+.run{
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.extra-content h2{
+    font-size: 32px;
+}
+.extra-btn{
+    width: 100%;
+}
+.extra-image img{
+    width: 100%;
+    border-radius: 18px;
+    
+}
+   /* calculate section start here */
+#calculator{
+    margin-top: 50px;
+    padding-top: 40px;
+}
+.calculate h1{
+    font-size: 32px;
+    margin-bottom: 14px;
+    margin-left: 16px;
+}
+.calculate p{
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    margin-bottom: 50px;
+}
+.para{
+    margin-left: 16px;
+}
+.calculate-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.calculate-container h2{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+table{
+    border-collapse: collapse;
+}
+table,tr,th,td{
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 15px;
+}
+th{
+    color: var(--color);
+    text-align: left;
+}
+td{
+    color: var(--text-color);
+}
+.your-calculator h2{
+    margin-top: -130px;
+    color: var(--color);
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.your-calculator p{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.input input{
+    width: 45%;
+}
+.input select{
+    width: 45%;
+}
+.input select option{
+    padding-right: 15px;
+}
+.input .select-activity{
+    width: 92%;
+}
+.input input:last-child{
+    width: px;
+    margin-bottom:30px;
+    width: 390px;
+}
+.cal-btn{
+    width: 30%;
+}
+
+/* package section(Unique) starts here */
+.cards{
+    grid-template-columns:1fr;
+}
+.content h1{
+    font-size: 30px;
+}
+/*meet section starts here */
+#meet-team{
+    margin-top: 66px;
+    margin-bottom: 66px;
+}
+.meet-container h1{
+    font-size: 32px;
+}
+.meet-container p{
+    letter-spacing: 0.5px;
+}
+/* .meet-image-single{
+    height: 370px;
+} */
+.meet-image{
+    border-radius: 18px;
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.meet-image-1{
+    position: relative;
+}
+.meet-image-single{
+    height: 300px;
+}
+.meet-image-single img{
+    width: 100%;
+    border-radius: 18px;
+    /* height: 100%; */
+}
+.meet-image-content{
+    top: 77%;
+    left: 6%;
+}
+
+
+
+/* footer section starts here  */
+#footer{
+    background-color: rgba(255,255,255,0.1);
+    padding-top: 66px;
+}
+.footer-container{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 50px;
+    align-items: center;
+}
+.foot h3{
+    color: var(--fitness);
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.foot p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.3;
+    line-height: 24px;
+}
+.foot2 h4{
+    color: var(--color);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.foot2 ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.foot2 ul li a{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 23px;
+    font-weight: 400;
+    text-decoration: none;
+}
+hr{
+    border: 2px solid rgba(255,255,255,0.1);
+    margin-bottom: 20px;
+}
+.footer-pera{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+   
+}
+
+
 @media screen and (max-width:576px) {
 
     /* navbar and banner start here */
@@ -656,7 +970,7 @@ hr{
         grid-template-columns: 1fr;
     }
     .habit-1{
-        margin-bottom: 200px;
+        margin-bottom: 230px;
         transform: translateX(25%);
     }
 
@@ -758,7 +1072,7 @@ td{
     width: 50%;
 }
 
-/* package section starts here */
+/* package section(Unique) starts here */
 .cards{
     grid-template-columns:1fr;
 }
@@ -829,6 +1143,9 @@ td{
     font-weight: 400;
     letter-spacing: 0.3;
     line-height: 24px;
+}
+.foot-div{
+    flex-direction: column;
 }
 .foot2 h4{
     color: var(--color);
