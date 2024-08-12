@@ -34,7 +34,7 @@ body{
 /* navbar start here */
 #header{
     padding-top: 52px;
-   background: linear-gradient(180deg, rgb(17, 17, 17),rgba(52, 52, 52, 0.65) 34.685%,rgba(119, 119, 119, 0) 100%);
+   background: linear-gradient(rgb(17, 17, 17),rgba(52, 52, 52, 0.65) 34.685%,rgba(119, 119, 119, 0) 100%);
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .navbar{
@@ -238,10 +238,8 @@ body{
     align-items: center;
     gap: 165px;
     justify-content: space-between;
-    padding-top: 41px;
-    padding-right: 32px;
-    padding-left: 54px;
-    padding-bottom: 29px;
+    padding: 41px 32px 29px 54px ;
+    
     border-radius: 18px;
 }
 .extra-content h2{
@@ -289,6 +287,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 200px;
+   
 }
 .calculate-container h2{
     color: var(--color);
@@ -343,10 +342,11 @@ td{
     border: none;
     margin-bottom: 5px;
     padding-right: 15px;
+    border-right: 10px solid #393939;
 }
 
 .input .select-activity{
-    width: 577px;
+    width: 574px;
     margin-bottom: 40px;
 }
 .input select,input::placeholder{
@@ -979,9 +979,13 @@ hr{
     margin-top: 20px;
 }
 .run{
+    background: rgb(34,34,34);
+    display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+    gap: 150px;
     justify-content: space-between;
+   
 }
 .extra-content h2{
     font-size: 32px;
@@ -990,7 +994,7 @@ hr{
     width: 100%;
 }
 .extra-image img{
-    width: 100%;
+    
     border-radius: 18px;
     margin-top: -100px;
 }
@@ -1017,6 +1021,7 @@ hr{
 .calculate-container{
     display: grid;
     grid-template-columns: 1fr;
+    
 }
 .calculate-container h2{
     font-size: 16px;
